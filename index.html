@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <style>
+      .hello {
+        width: 500px;
+        border: 1px solid red;
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 40px;
+      }
+
+      .one {
+        order: 1;
+      }
+
+      .two {
+        order: 3;
+      }
+
+      .three {
+        order: 2;
+      }
+
+      .four {
+        order: 4;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .hello {
+          background-color: blue;
+        }
+      }
+      @media only screen and (min-width: 768px) and (max-width: 992px) {
+        .hello {
+          background-color: green;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hello">
+      <div class="one">111</div>
+      <div class="two">222</div>
+      <div class="three">333</div>
+      <div class="four">444</div>
+    </div>
+  </body>
+</html>
